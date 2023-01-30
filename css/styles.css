@@ -702,12 +702,15 @@ body {
     line-height: 24px;
 
     background: #4D5AE5;
+    border-color: transparent;
     border-radius: 4px;
 
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
+
+    transition: background 250ms var(--animation-cubic), box-shadow 250ms var(--animation-cubic); 
 }
 
 .footer-form button[type="submit"]:hover{
@@ -740,6 +743,13 @@ color: #FFFFFF;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    transition: border 250ms var(--animation-cubic);
+}
+
+.footer-form input[type="email"]:focus{
+    border: 1px solid #4D5AE5;
+    outline: none;
 }
 
 .footer-form-wrap{
@@ -848,6 +858,8 @@ color: #FFFFFF;
     border-radius: 50%;
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transition: background 250ms var(--animation-cubic), fill 250ms var(--animation-cubic);
 }
 
 .modal-close-button:active{
@@ -884,9 +896,12 @@ color: #FFFFFF;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
+    transition: border 250ms var(--animation-cubic);
+
 }
-.input-div input:focus{
+.input-div input:focus{ 
     border: 1px solid #4D5AE5;
+    outline: none;
 }
 
 
@@ -920,9 +935,13 @@ color: #FFFFFF;
     border-radius: 4px;
     resize: none;
 
-
+    transition: border 250ms var(--animation-cubic);
 }
 
+.modal-form textarea:focus{
+    border: 1px solid #4D5AE5;
+    outline: none;
+} 
 .modal-form textarea::placeholder{
     font-size: 12px;
     line-height: 1.33;
@@ -977,12 +996,14 @@ color: #FFFFFF;
     margin-right: 8px;
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
+
+    
 }
 
 .policy-wrap input[type="checkbox"]:checked + .icon{
     background: #404BBF;
     border: 1.25px solid #404BBF;
-    border-radius: 2px;
+
 
     background-image: url(../images/check-mark.svg);
     background-size: contain;
