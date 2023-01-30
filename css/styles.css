@@ -869,8 +869,6 @@ button[type="submit"]:hover{
     margin-bottom: 16px;
     display: flex;
     gap: 8px;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
 }
 
 .policy-wrap label[for="policy"]{
@@ -893,10 +891,38 @@ button[type="submit"]:hover{
     
 }
 
+.policy-wrap label{
+    display: flex;
+
+}
+
 .policy-link{
     text-decoration-line: underline;
     color: #4D5AE5;
 }
+
+.policy-wrap input[type="checkbox"]{
+    appearance: none;
+    position: absolute;
+}
+
+.policy-wrap .icon{
+
+    margin-right: 8px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+}
+
+.policy-wrap input[type="checkbox"]:checked + .icon{
+    background: #404BBF;
+    border: 1.25px solid #404BBF;
+    border-radius: 2px;
+
+    background-image: url(../images/check-mark.svg);
+    background-size: contain;
+}
+
+
 
 
 
