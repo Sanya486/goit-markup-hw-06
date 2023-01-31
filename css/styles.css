@@ -795,7 +795,7 @@ color: #FFFFFF;
 }
 
 .modal{
-    padding: 24px;
+    padding:72px 24px 24px 24px;
 }
 
 .backdrop.is-hidden {
@@ -831,14 +831,12 @@ color: #FFFFFF;
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin-top: 48px;
+    margin-bottom: 16px;
+    
 }
 
 .modal-form{
-    display: flex;
-    flex-direction: column;
-    margin-top: 14px;
-    gap: 8px;
+    
 }
 
 .modal-close-button {
@@ -881,15 +879,13 @@ color: #FFFFFF;
     color: #8E8F99;
 
 }
-
-.input-div{
-    display: flex;
-    flex-direction: column;
-    
-   
+.icon-wrap{
+    margin-bottom: 8px;
 }
 
-.input-div input{
+
+.icon-wrap input{
+    display: block;
     width: 100%;
     padding: 8px 16px 8px 38px;
     margin: 0;
@@ -899,7 +895,7 @@ color: #FFFFFF;
     transition: border 250ms var(--animation-cubic);
 
 }
-.input-div input:focus{ 
+.icon-wrap input:focus{ 
     border: 1px solid #4D5AE5;
     outline: none;
 }
@@ -907,6 +903,7 @@ color: #FFFFFF;
 
 
 .modal button[type="submit"]{
+    
     margin-left: auto;
     margin-right: auto;
     width: 169px;
