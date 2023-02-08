@@ -282,8 +282,14 @@ body {
     row-gap: 48px;
     column-gap: 24px;
 
-    flex-basis: calc((100%-48)/3);
+    
 }
+
+.examples-list .item{
+    
+    flex-basis: calc((100% - 2*24px)/3);
+}
+
 
 .examples-list .text {
     padding-top: 32px;
@@ -591,7 +597,7 @@ body {
 }
 
 .customers-list .item{
-    width: calc((100%-5*24)/6);
+    width: calc((100% - 5*24px)/6);
     height: 88px;
 }
 
